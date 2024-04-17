@@ -1,7 +1,7 @@
 '''
-Author: Bappy Ahmed
-Email: entbappy73@gmail.com
-Date: 2021-Dec-18
+Author: Shaina Sarika
+Email: shainasarika@gmail.com
+Date: 2024-April-04
 '''
 
 import pickle
@@ -9,7 +9,7 @@ import streamlit as st
 import numpy as np
 
 
-st.header('Book Recommender System Using Machine Learning')
+st.header('Unlock Your Next Favorite Read Today!')
 model = pickle.load(open('artifacts/model.pkl','rb'))
 book_names = pickle.load(open('artifacts/book_names.pkl','rb'))
 final_rating = pickle.load(open('artifacts/final_rating.pkl','rb'))
@@ -52,7 +52,7 @@ def recommend_book(book_name):
 
 
 selected_books = st.selectbox(
-    "Type or select a book from the dropdown",
+    "Select your book from the dropdown",
     book_names
 )
 
